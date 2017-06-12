@@ -31,6 +31,7 @@ class BankController extends Controller
             'toBank' => $request->toBank,
             'toAccountNumber' => $request->toAccountNumber,
             'toAccountName' => $request->toAccountName,
+            'transferStatus' => $request->transferStatus,
             'user_id' => auth()->user()->id
 
           ]);
@@ -57,6 +58,7 @@ class BankController extends Controller
           'toBank' => $request->toBank,
           'toAccountNumber' => $request->toAccountNumber,
           'toAccountName' => $request->toAccountName,
+          'transferStatus' => $request->transferStatus,
           'user_id' => auth()->user()->id
         ]);
 

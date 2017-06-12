@@ -9,19 +9,19 @@
       <table class="table table-bordered">
         <tr>
           <th>Id</th>
-          <th>Name</th>
-          <th>Method</th>
-          <th>FromBank</th>
-          <th>FromAccountNumber</th>
-          <th>FromAccountName</th>
-          <th>TransferDate</th>
-          <th>TransferTime</th>
-          <th>Amount</th>
-          <th>ToBank</th>
-          <th>ToAccountNumber</th>
-          <th>ToAccountName</th>
-          <th>TransferStatus</th>
-          <th>Action</th>
+          <th>ชื่อ</th>
+          <th>วิธีการโอน</th>
+          <th>โอนจากธนาคาร</th>
+          <th>โอนจากเลขบัญชี</th>
+          <th>โอนจากชื่อบัญชี</th>
+          <th>วันที่โอน</th>
+          <th>เวลาที่โอน</th>
+          <th>จำนวนเงิน</th>
+          <th>โอนเข้าธนาคาร</th>
+          <th>โอนเข้าเลขบัญชี</th>
+          <th>โอนเข้าชื่อบัญชี</th>
+          <th>สถานะการโอน</th>
+          <th>เกี่ยวกับ</th>
         </tr>
 
         @foreach ($banks as $bank)
@@ -33,7 +33,7 @@
           <td>{{ $bank->fromAccountNumber }}</td>
           <td>{{ $bank->fromAccountName }}</td>
           <td>{{ $bank->transferDate }}</td>
-          <td>{{ $bank->transferTime }}<</td>
+          <td>{{ $bank->transferTime }}</td>
           <td>{{ $bank->amount }}</td>
           <td>{{ $bank->toBank }}</td>
           <td>{{ $bank->toAccountNumber }}</td>

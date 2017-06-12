@@ -88,6 +88,18 @@
               <input type="text" class="form-control"  name="toAccountName" id="toAccountName" placeholder="ToAccountName">
             </div>
 
+            <div class="form-group">
+            <label for="transferStatus">สถานะ</label>
+            <select class="form-control" name="transferStatus" id="transferStatus">
+              <option value="">SELECT</option>
+              <option value="waiting">waiting</option>
+              <option value="approved">approved</option>
+              <option value="rejected์">rejected</option>
+
+            </select>
+
+          </div>
+
 
 
 

@@ -26,7 +26,7 @@ class CreateBankTable extends Migration
           $table->string('toBank');
           $table->string('toAccountNumber');
           $table->string('toAccountName');
-          $table->integer('transferStatus')->default('0');
+          $table->string('transferStatus');
           $table->timestamps();
       });
     }
